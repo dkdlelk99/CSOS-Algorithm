@@ -8,4 +8,4 @@ https://www.acmicpc.net/
 ### 백준 문제 난이도별 정리
 https://solved.ac/
 <br>
-`단국대학교` 가입
+`단국대학교` 가입할 것
