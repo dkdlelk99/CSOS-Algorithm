@@ -8,9 +8,7 @@ help=1000000007
 def power(exp):
     if(exp<0): #미분한 식의 지수가 0보다 작으면 항이 사라짐
         return 0
-    elif(exp==1):
-        return 2
-    else:
+    else: #2의 거듭제곱 구하기
         a=2
         value=1
         exp_bin=format(exp,'b')
@@ -18,7 +16,7 @@ def power(exp):
         for i in exp_bin:
             if(i=='1'):
                 value=int(value*a%help)
-            a=int(a*2%help)
+            a=int(a**2%help)
         return value
 
 for _ in range(n):
