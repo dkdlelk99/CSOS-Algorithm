@@ -1,3 +1,3 @@
-# 1008 A×B
+# 1008 A/B
 
 https://www.acmicpc.net/problem/10998
