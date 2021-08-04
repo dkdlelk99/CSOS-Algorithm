@@ -6,5 +6,5 @@ answer = "<"
 for _ in range(N): # N개의 숫자열을 만든다
     for k in range(K-1): # k-1번 돌리고
         josephus.append(josephus.popleft())
-        answer += str(josephus.popleft()) + ", " # 뽑아서 넣는다
+    answer += str(josephus.popleft()) + ", " # 뽑아서 넣는다
 print(answer[:-2]+">")
