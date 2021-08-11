@@ -4,21 +4,21 @@ n_list=sorted(n_list)
 
 m=int(input())
 m_list=list(map(int,input().split()))
+result=[]
 
 def binary_search(arr, start, end):
-    while(start<=end):
+    while (start<=end):
         mid=(start+end)//2
         if(arr==n_list[mid]):
-            return True
+            return 1
         elif(arr>n_list[mid]):
-            return binary_search(arr, mid+1, end)
+            start=mid+1
         else:
-            return binary_search(arr, start, mid-1)
-    return False
+            end=mid-1
+    return 0
 
 for i in m_list:
-    result=binary_search(i, 0, n-1)
-    if(result==True):
-        print(1)
-    else:
-        print(0)
+    result.append(binary_search(i, 0, n-1))
+
+for i in result:
+    print(i, end=" ")
