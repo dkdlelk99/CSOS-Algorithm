@@ -18,13 +18,7 @@ def fibo_one(n):
         return o[n]
 
 t=int(input())
-l=[]
 for i in range(t):
     n=int(input())
-    fibo_zero(n)
-    fibo_one(n)
-    l.append([z[n],o[n]])
-
-for i in l:
-    print(i[0],i[1])
+    print(fibo_zero(n), fibo_one(n))
 
