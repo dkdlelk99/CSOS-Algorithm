@@ -17,11 +17,16 @@ https://www.acmicpc.net/problem/10814
 
 ## 예제 입력 1 
 3
+
 21 Junkyu
+
 21 Dohyun
+
 20 Sunyoung
 
 ## 예제 출력 1 
 20 Sunyoung
+
 21 Junkyu
+
 21 Dohyun
