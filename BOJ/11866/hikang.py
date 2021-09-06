@@ -14,9 +14,8 @@ while q:
   for i in range(K-1):
       q.append(q.popleft())
   # K번째는 출력 (append NO!)
-
   print(q.popleft(),end="") 
   if q:
     print(", ",end="")
-  
-print(">")
+
+print(">") 
