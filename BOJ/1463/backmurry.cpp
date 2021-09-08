@@ -21,7 +21,7 @@ int main() {
         if (!(i % 3)) list[i] = min(list[i], list[i/3] + 1);
     }
 
-    cout<< arr[n]<<endl ;
+    cout<< list[n]<<endl ;
     
     return 0;
 }
