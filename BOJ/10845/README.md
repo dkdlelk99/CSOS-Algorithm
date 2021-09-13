@@ -22,31 +22,57 @@ https://www.acmicpc.net/problem/10845
 
 ## 예제 입력 1 
 15
+
 push 1
+
 push 2
+
 front
+
 back
+
 size
+
 empty
+
 pop
+
 pop
+
 pop
+
 size
+
 empty
+
 pop
+
 push 3
+
 empty
+
 front
 ## 예제 출력 1 
 1
+
 2
+
 2
+
 0
+
 1
+
 2
+
 -1
+
 0
+
 1
+
 -1
+
 0
+
 3
