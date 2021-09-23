@@ -17,5 +17,5 @@ while q:
   print(q.popleft(),end="") 
   if q:
     print(", ",end="")
-  
-print(">")
+
+print(">") 
