@@ -12,3 +12,4 @@ for i in range(T):
     print("YES")
   else:
     print("NO")
+  
