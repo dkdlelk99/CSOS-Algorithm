@@ -1,0 +1,13 @@
+N = int(input())
+G = 1
+int(G)
+int(N)
+L = len(str(N))
+int(L)
+for G in range(1000000):
+    a = G // (10**(L-1)) #100의 자리
+    b =
+    if N - G == G//(10**(L-1)) + [{G - G//(10**(L-1))*}//10] + G-[G//(10**L) + {G - G//(10**L)}//10]:
+        print(G)
+    else:
+        print(0)
