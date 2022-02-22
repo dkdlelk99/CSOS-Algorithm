@@ -1,0 +1,44 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#pragma warning(disable:4996)
+
+typedef struct coor{
+    int x;
+    int y;
+}coor;
+
+int main() {
+    int N;
+    int temp;
+
+    scanf("%d", &N);
+    coor* point = (coor*)malloc(sizeof(coor) * N);
+
+    for (int i = 0; i < N; i++)
+        scanf("%d %d", &point[i].x, &point[i].y);
+
+    for (int i = 0; i < N-1; i++) {
+        for (int j = i+1; j < N; j++) {
+            if (point[i].x > point[j].x) {
+                temp = point[i].x;
+                point[i].x = point[j].x;
+                point[j].x = temp;
+                temp = point[i].y;
+                point[i].y = point[j].y;
+                point[j].y = temp;
+            }
+            else if ((point[i].x == point[j].x) && (point[i].y > point[j].y)) {
+                temp = point[i].x;
+                point[i].x = point[j].x;
+                point[j].x = temp;
+                temp = point[i].y;
+                point[i].y = point[j].y;
+                point[j].y = temp;
+            }
+        }
+    }
+        
+    for (int i = 0; i < N; i++)
+        printf("%d %d\n", point[i].x, point[i].y);
+    return 0;
+}
